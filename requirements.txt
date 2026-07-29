@@ -6,10 +6,13 @@ db-dtypes
 jupyter
 notebook
 ipykernel
-seaborn
 ipywidgets
+seaborn
 scikit-learn
 xgboost
+joblib
+requests
 pydantic
 fastapi
 uvicorn[standard]
+streamlit

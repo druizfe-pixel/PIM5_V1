@@ -33,7 +33,7 @@ from sklearn.metrics import (
     RocCurveDisplay
 )
 
-from ft_engineering import preprocesar_datos
+from src.ft_engineering import preprocesar_datos
 
 warnings.filterwarnings("ignore")
 

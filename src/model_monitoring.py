@@ -1,6 +1,6 @@
 import os
 import joblib
-from cargar_datos import cargarDatos
+from src.cargar_datos import cargarDatos
 
 import pandas as pd
 

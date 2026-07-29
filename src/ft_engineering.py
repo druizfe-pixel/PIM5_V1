@@ -7,7 +7,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import FunctionTransformer
 
-from cargar_datos import cargarDatos
+from .cargar_datos import cargarDatos
 
 # # 1. Cargamos los datos
 # df = cargarDatos()
@@ -96,16 +96,13 @@ def preprocesar_datos():
 
     # 2. Features y Target
     
-    # columnas_eliminar = [
-    #     "Pago_atiempo",
-    #     "saldo_mora",
-    #     "saldo_total",
-    #     "saldo_principal",
-    #     "saldo_mora_codeudor"
-    # ]
-    # X = df.drop(columns=columnas_eliminar)
+    columnas_eliminar = [
+        "Pago_atiempo",
+        "puntaje"
+    ]
+    X = df.drop(columns=columnas_eliminar)
     
-    X = df.drop('Pago_atiempo', axis=1) # Features
+    #X = df.drop('Pago_atiempo', axis=1) # Features
     y = df["Pago_atiempo"]
 
     # 3. Variables numéricas y categóricas
