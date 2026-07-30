@@ -3,7 +3,7 @@
 ## Sistema Inteligente para la Evaluación del Riesgo de Crédito
 
 <p align="center">
-<img src="images/dashboard.png" width="1000">
+<img src="images/Streamlit_dashboard.png" width="1000">
 </p>
 
 
